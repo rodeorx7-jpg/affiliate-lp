@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>着るUV対策 UVカットパーカー｜毎日の日焼け止め、もう卒業</title>
+<meta name="description" content="UVカット99%・UPF50+・接触冷感のUVカットパーカーで、面倒な日焼け止め塗り直しから解放。車の運転・買い物・送迎・散歩に。">
+<style>
+  :root {
+    --color-bg: #fdfaf5;
+    --color-accent: #ff8a65;
+    --color-accent-dark: #e8603f;
+    --color-text: #3a332e;
+    --color-sub: #7a6f66;
+    --color-card: #ffffff;
+    --radius: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .page {
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /* 広告表示 */
+  .ad-label {
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    background: #999;
+    padding: 4px 0;
+    letter-spacing: 0.1em;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .hero {
+    background: linear-gradient(180deg, #ffe8d6 0%, var(--color-bg) 100%);
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  .hero .icon {
+    font-size: 56px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 16px 0 8px;
+  }
+
+  .hero p.lead {
+    font-size: 15px;
+    color: var(--color-sub);
+    margin: 0;
+  }
+
+  h2.section-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+
+  h2.section-title .small {
+    display: block;
+    font-size: 13px;
+    color: var(--color-accent-dark);
+    font-weight: normal;
+    margin-bottom: 6px;
+  }
+
+  /* 共感セクション */
+  .empathy-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .empathy-list li {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    font-size: 14.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .empathy-list li::before {
+    content: "☑︎ ";
+    color: var(--color-accent-dark);
+    font-weight: bold;
+  }
+
+  /* 解決策 */
+  .solution {
+    background: #fff3ea;
+    text-align: center;
+    border-radius: var(--radius);
+    margin: 0 20px;
+    padding: 32px 20px;
+  }
+
+  .solution .big {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-accent-dark);
+    margin: 8px 0;
+  }
+
+  /* 特徴カード */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .feature-card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    text-align: center;
+    padding: 18px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .feature-card .num {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-accent-dark);
+    display: block;
+  }
+
+  .feature-card .label {
+    font-size: 12px;
+    color: var(--color-sub);
+    margin-top: 4px;
+    display: block;
+  }
+
+  /* カバー範囲 */
+  .coverage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .coverage-item {
+    display: flex;
+    align-items: center;
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .coverage-item .emoji {
+    font-size: 26px;
+    margin-right: 14px;
+  }
+
+  .coverage-item .text {
+    font-size: 14.5px;
+  }
+
+  .coverage-item .text b {
+    color: var(--color-accent-dark);
+  }
+
+  /* 使用シーン */
+  .scene-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .scene-card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    text-align: center;
+    padding: 22px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .scene-card .emoji {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .scene-card .text {
+    font-size: 13.5px;
+    color: var(--color-text);
+  }
+
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-bg) 0%, #ffe8d6 100%);
+    padding-bottom: 48px;
+  }
+
+  .cta-section .push {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+  }
+
+  .cta-button {
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    background: var(--color-accent-dark);
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 12px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(232, 96, 63, 0.4);
+  }
+
+  .cta-button:active {
+    opacity: 0.85;
+  }
+
+  .cta-note {
+    font-size: 11.5px;
+    color: var(--color-sub);
+    margin-top: 14px;
+  }
+
+  .disclosure {
+    text-align: center;
+    font-size: 11px;
+    color: #9a9a9a;
+    padding: 16px 20px 32px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 広告表示（ページ最上部） -->
+  <div class="ad-label">PR / 広告</div>
+
+  <!-- 1. 悩み提起 + 2. 共感（ヒーローセクション） -->
+  <section class="hero">
+    <div class="icon">☀️</div>
+    <h1>日焼け止め、<br>毎日塗るの面倒じゃない？</h1>
+    <p class="lead">忙しい朝、日焼け止めを塗る時間も、<br>こまめな塗り直しも、正直しんどい…</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">
+      <span class="small">わかります、その気持ち</span>
+      こんなお悩み、ありませんか？
+    </h2>
+    <ul class="empathy-list">
+      <li>朝の準備で日焼け止めを塗る時間がない</li>
+      <li>汗や皮脂でベタベタするのが苦手</li>
+      <li>数時間ごとの塗り直しなんて現実的に無理</li>
+      <li>塗り忘れた首や手の甲だけ日焼けする</li>
+    </ul>
+  </section>
+
+  <!-- 3. 解決策 -->
+  <section>
+    <div class="solution">
+      <p style="margin:0; font-size:14px; color: var(--color-sub);">そんな方におすすめなのが</p>
+      <p class="big">「塗る」から「着る」<br>UV対策へ</p>
+      <p style="margin:0; font-size:14px;">羽織るだけで、面倒な塗り直し不要。</p>
+    </div>
+  </section>
+
+  <!-- 4. 商品特徴 -->
+  <section>
+    <h2 class="section-title">
+      <span class="small">UVカットパーカーの特徴</span>
+      これ1枚で、しっかりガード
+    </h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="num">99%</span>
+        <span class="label">UVカット率</span>
+      </div>
+      <div class="feature-card">
+        <span class="num">UPF50+</span>
+        <span class="label">紫外線防御指数</span>
+      </div>
+      <div class="feature-card">
+        <span class="num">接触冷感</span>
+        <span class="label">ひんやり素材</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. カバー範囲 -->
+  <section>
+    <h2 class="section-title">
+      <span class="small">塗り残しゼロへ</span>
+      顔まわり・首・手の甲まで<br>しっかりカバー
+    </h2>
+    <div class="coverage-list">
+      <div class="coverage-item">
+        <span class="emoji">🧕</span>
+        <span class="text"><b>顔まわり</b>も日よけフードでカバー</span>
+      </div>
+      <div class="coverage-item">
+        <span class="emoji">🧣</span>
+        <span class="text"><b>首まわり</b>までしっかりガード</span>
+      </div>
+      <div class="coverage-item">
+        <span class="emoji">🧤</span>
+        <span class="text">日焼けしやすい<b>手の甲</b>もカバー</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 使用シーン -->
+  <section>
+    <h2 class="section-title">
+      <span class="small">こんなシーンで大活躍</span>
+      毎日のあらゆる場面に
+    </h2>
+    <div class="scene-grid">
+      <div class="scene-card">
+        <span class="emoji">🚗</span>
+        <span class="text">車の運転中の<br>日差し対策に</span>
+      </div>
+      <div class="scene-card">
+        <span class="emoji">🛒</span>
+        <span class="text">ちょっとした<br>買い物に</span>
+      </div>
+      <div class="scene-card">
+        <span class="emoji">🧒</span>
+        <span class="text">子どもの<br>送り迎えに</span>
+      </div>
+      <div class="scene-card">
+        <span class="emoji">🚶</span>
+        <span class="text">近所の<br>散歩に</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTAボタン -->
+  <section class="cta-section">
+    <p class="push">羽織るだけの新しいUV対策、<br>試してみませんか？</p>
+    <!--
+      ★楽天アフィリエイトリンクについて★
+      下の href="https://example.com/dummy-rakuten-affiliate-link" の部分に、
+      ご自身の楽天アフィリエイトリンクを貼り替えてください（今はダミーです）。
+    -->
+    <a class="cta-button" href="https://example.com/dummy-rakuten-affiliate-link" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      楽天市場で商品を見る
+    </a>
+    <p class="cta-note">※価格・在庫は楽天市場の商品ページをご確認ください</p>
+  </section>
+
+  <p class="disclosure">本ページはプロモーションを含みます（アフィリエイト広告）</p>
+
+</div>
+</body>
+</html>
