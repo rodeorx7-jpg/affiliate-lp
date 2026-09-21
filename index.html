@@ -246,6 +246,19 @@
     margin-top: 14px;
   }
 
+  /* ファーストビュー画像 */
+  .firstview img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .firstview-cta {
+    text-align: center;
+    padding: 20px 20px 8px;
+    background: linear-gradient(180deg, #ffe8d6 0%, var(--color-bg) 100%);
+  }
+
   .disclosure {
     text-align: center;
     font-size: 11px;
@@ -259,6 +272,21 @@
 
   <!-- 広告表示（ページ最上部） -->
   <div class="ad-label">PR / 広告</div>
+
+  <!-- ファーストビュー画像（Pinterestからの誘導用メイン画像） -->
+  <div class="firstview">
+    <img src="images/first-view.jpg" alt="日焼け止め、毎日塗るの面倒じゃない？着るだけのUV対策 UVカットパーカー" width="1536" height="2752">
+  </div>
+  <!--
+    ★楽天アフィリエイトリンクについて★
+    画像内の「商品を詳しく見る」は画像の一部のため押せません。
+    実際に押せるボタンとして、下のリンクを用意しています（今はダミーです）。
+  -->
+  <div class="firstview-cta">
+    <a class="cta-button" href="https://example.com/dummy-rakuten-affiliate-link" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      商品を詳しく見る
+    </a>
+  </div>
 
   <!-- 1. 悩み提起 + 2. 共感（ヒーローセクション） -->
   <section class="hero">
