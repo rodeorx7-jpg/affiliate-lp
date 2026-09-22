@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>キッズサファリハット｜子どもの日焼け対策に、首まわりまで守るUVカット帽子</title>
+<meta name="description" content="UVカット99%以上・撥水加工・あご紐付き・サイズ調整OKのキッズサファリハット。公園、送迎、水遊び、旅行まで、子どもの毎日の紫外線対策に。">
+<style>
+  :root {
+    --color-bg: #f5fafd;
+    --color-accent: #6fc3ea;
+    --color-accent-dark: #2f8fc4;
+    --color-pink: #f7a8c4;
+    --color-text: #2c3e50;
+    --color-sub: #6b7d8f;
+    --color-card: #ffffff;
+    --radius: 16px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .page {
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  section {
+    padding: 36px 20px;
+  }
+
+  .disclosure {
+    text-align: center;
+    font-size: 11px;
+    color: #9aa8b5;
+    padding: 10px 20px;
+  }
+
+  /* プレースホルダー画像（実画像差し替え前の仮表示） */
+  .ph {
+    background: repeating-linear-gradient(135deg, #eaf6fc, #eaf6fc 12px, #dcf0fa 12px, #dcf0fa 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-sub);
+    font-size: 13px;
+    text-align: center;
+    border-radius: var(--radius);
+    width: 100%;
+  }
+
+  .ph-label {
+    background: rgba(255,255,255,0.85);
+    padding: 6px 14px;
+    border-radius: 999px;
+  }
+
+  /* ヒーロー画像 */
+  .hero-photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    right: 84px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 23px;
+    line-height: 1.5;
+    margin: 0 0 8px;
+    color: var(--color-text);
+  }
+
+  .hero-overlay h1 .mark {
+    background: linear-gradient(transparent 60%, #ffe28a 60%);
+  }
+
+  .hero-overlay p {
+    font-size: 13.5px;
+    color: var(--color-sub);
+    margin: 0;
+  }
+
+  .hero-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: var(--color-accent-dark);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    line-height: 1.25;
+    box-shadow: 0 4px 12px rgba(47, 143, 196, 0.35);
+  }
+
+  .hero-badge .pct {
+    font-size: 15px;
+  }
+
+  .hero-badge .label {
+    font-size: 9px;
+  }
+
+  /* アイコンバッジ4列 */
+  .icon-badges {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-top: 24px;
+  }
+
+  .icon-badge {
+    text-align: center;
+  }
+
+  .icon-badge .emoji {
+    font-size: 22px;
+    display: block;
+  }
+
+  .icon-badge .text {
+    font-size: 11px;
+    color: var(--color-sub);
+    margin-top: 4px;
+    display: block;
+  }
+
+  /* CTA */
+  .cta-button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 22px auto 0;
+    background: var(--color-accent-dark);
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 12px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(47, 143, 196, 0.35);
+  }
+
+  .cta-button:active {
+    opacity: 0.85;
+  }
+
+  h2.section-title {
+    font-size: 19px;
+    text-align: center;
+    margin: 0 0 22px;
+    line-height: 1.5;
+  }
+
+  /* 悩みセクション */
+  .worry-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .worry-row .ph {
+    width: 110px;
+    min-width: 110px;
+    aspect-ratio: 3 / 4;
+    font-size: 11px;
+  }
+
+  .worry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+  }
+
+  .worry-list li {
+    font-size: 13.5px;
+    margin-bottom: 10px;
+  }
+
+  .worry-list li::before {
+    content: "☑︎ ";
+    color: var(--color-accent-dark);
+    font-weight: bold;
+  }
+
+  /* 解決策セクション */
+  .solution-text {
+    margin-bottom: 18px;
+  }
+
+  .solution-text p {
+    font-size: 14px;
+    color: var(--color-sub);
+    margin-top: 8px;
+  }
+
+  .solution-photo.ph {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* ポイントカード */
+  .point-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .point-card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .point-card .title {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .point-card .desc {
+    font-size: 12px;
+    color: var(--color-sub);
+    margin: 0;
+  }
+
+  /* 使用シーン */
+  .scene-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .scene-item .ph {
+    aspect-ratio: 1 / 1;
+    font-size: 11px;
+  }
+
+  .scene-item .caption {
+    text-align: center;
+    font-size: 11.5px;
+    margin-top: 6px;
+    color: var(--color-text);
+  }
+
+  /* うれしいポイント */
+  .benefit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .benefit-list li {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 13.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .benefit-list li::before {
+    content: "☑︎ ";
+    color: var(--color-accent-dark);
+    font-weight: bold;
+  }
+
+  /* 商品詳細 */
+  .detail-section {
+    background: #eef7fc;
+  }
+
+  .detail-block {
+    margin-bottom: 22px;
+  }
+
+  .detail-block h3 {
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+
+  .color-swatches {
+    display: flex;
+    gap: 20px;
+  }
+
+  .color-swatch {
+    text-align: center;
+    font-size: 11.5px;
+    color: var(--color-sub);
+  }
+
+  .color-dot {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 0 auto 6px;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .color-dot.pink { background: #f7c6da; }
+  .color-dot.blue { background: #bfe0f5; }
+  .color-dot.ivory { background: #f1e9d8; }
+
+  .size-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .size-card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 12px;
+    text-align: center;
+  }
+
+  .size-card .name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .size-card .desc {
+    font-size: 11.5px;
+    color: var(--color-sub);
+    margin-top: 4px;
+  }
+
+  .merit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .merit-card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 12.5px;
+  }
+
+  .closing {
+    text-align: center;
+    padding: 30px 20px 10px;
+  }
+
+  .closing p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 16px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="disclosure">広告・アフィリエイトを含みます</p>
+
+  <!-- ヒーロー（ファーストビュー） -->
+  <div class="hero-photo ph">
+    <span class="ph-label">商品画像（準備中）</span>
+    <div class="hero-overlay">
+      <h1>子どもの<br>日焼け対策、<br><span class="mark">顔だけで大丈夫？</span></h1>
+      <p>首まわりまで守る<br>キッズサファリハット</p>
+    </div>
+    <div class="hero-badge">
+      <span class="pct">99%</span>
+      <span class="label">UVカット<br>以上</span>
+    </div>
+  </div>
+
+  <section style="padding-bottom: 0;">
+    <div class="icon-badges">
+      <div class="icon-badge">
+        <span class="emoji">☀️</span>
+        <span class="text">UVカット<br>99%以上</span>
+      </div>
+      <div class="icon-badge">
+        <span class="emoji">💧</span>
+        <span class="text">撥水加工</span>
+      </div>
+      <div class="icon-badge">
+        <span class="emoji">🪢</span>
+        <span class="text">あご紐付き</span>
+      </div>
+      <div class="icon-badge">
+        <span class="emoji">📏</span>
+        <span class="text">サイズ調整<br>OK</span>
+      </div>
+    </div>
+
+    <!--
+      ★楽天アフィリエイトリンクについて★
+      このLP内のCTAボタンは、すべて同じ楽天アフィリエイトリンクを使用しています。
+    -->
+    <a class="cta-button" href="https://hb.afl.rakuten.co.jp/ichiba/57c322a7.3e881040.57c322a8.7d8c3ed7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flegashop%2Fpjovs202506201753289596903493%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIn0%253D&rafmid=0106" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      楽天市場で商品を見る
+    </a>
+  </section>
+
+  <!-- 悩み提起 -->
+  <section>
+    <h2 class="section-title">こんなお悩みありませんか？</h2>
+    <div class="worry-row">
+      <div class="ph">
+        <span class="ph-label">画像<br>準備中</span>
+      </div>
+      <ul class="worry-list">
+        <li>子どもに日焼け止めを塗るのが大変</li>
+        <li>汗や水で落ちてしまうのが心配</li>
+        <li>首まわりや耳の後ろが気になる</li>
+        <li>外遊びのたびに対策が面倒</li>
+        <li>夏のレジャーでも安心できるものがほしい</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 解決策 -->
+  <section>
+    <div class="solution-text">
+      <h2 class="section-title">日焼け止めを塗るだけじゃない。<br>着るUV対策という選択肢も。</h2>
+      <p>子どものデリケートな肌をやさしく守るために、帽子でしっかりカバーする新しい紫外線対策をはじめませんか？</p>
+    </div>
+    <div class="solution-photo ph">
+      <span class="ph-label">商品画像（準備中）</span>
+    </div>
+  </section>
+
+  <!-- おすすめポイント -->
+  <section>
+    <h2 class="section-title">この商品のおすすめポイント</h2>
+    <div class="point-grid">
+      <div class="point-card">
+        <p class="title">☀️ UVカット99%以上</p>
+        <p class="desc">強い日差しからしっかりガード。</p>
+      </div>
+      <div class="point-card">
+        <p class="title">💧 撥水加工</p>
+        <p class="desc">水遊びや泥遊びでも使いやすい。</p>
+      </div>
+      <div class="point-card">
+        <p class="title">🪢 あご紐付き</p>
+        <p class="desc">風で飛びにくく、アクティブに動ける。</p>
+      </div>
+      <div class="point-card">
+        <p class="title">📏 サイズ調整OK</p>
+        <p class="desc">成長に合わせて長く使える。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用シーン -->
+  <section>
+    <h2 class="section-title">こんなシーンで大活躍！</h2>
+    <div class="scene-grid">
+      <div class="scene-item">
+        <div class="ph"><span class="ph-label">準備中</span></div>
+        <p class="caption">公園での外遊び</p>
+      </div>
+      <div class="scene-item">
+        <div class="ph"><span class="ph-label">準備中</span></div>
+        <p class="caption">保育園・幼稚園の送迎</p>
+      </div>
+      <div class="scene-item">
+        <div class="ph"><span class="ph-label">準備中</span></div>
+        <p class="caption">水遊び・プール</p>
+      </div>
+      <div class="scene-item">
+        <div class="ph"><span class="ph-label">準備中</span></div>
+        <p class="caption">海・レジャー</p>
+      </div>
+      <div class="scene-item">
+        <div class="ph"><span class="ph-label">準備中</span></div>
+        <p class="caption">旅行・お出かけ</p>
+      </div>
+      <div class="scene-item">
+        <div class="ph"><span class="ph-label">準備中</span></div>
+        <p class="caption">自転車・お散歩</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- うれしいポイント -->
+  <section>
+    <h2 class="section-title">子どもの笑顔を守る、<br>うれしいポイント</h2>
+    <ul class="benefit-list">
+      <li>顔・首・耳までしっかりカバー</li>
+      <li>軽くてやわらかい素材</li>
+      <li>通気性の良い生地で快適</li>
+      <li>かわいい3カラーから選べる</li>
+    </ul>
+  </section>
+
+  <!-- 商品詳細 -->
+  <section class="detail-section">
+    <h2 class="section-title">商品詳細</h2>
+
+    <div class="detail-block">
+      <h3>カラーバリエーション</h3>
+      <div class="color-swatches">
+        <div class="color-swatch"><div class="color-dot pink"></div>ピンク</div>
+        <div class="color-swatch"><div class="color-dot blue"></div>ブルー</div>
+        <div class="color-swatch"><div class="color-dot ivory"></div>アイボリー</div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h3>サイズ</h3>
+      <div class="size-table">
+        <div class="size-card">
+          <p class="name">Sサイズ</p>
+          <p class="desc">1〜3歳<br>頭囲 50cm</p>
+        </div>
+        <div class="size-card">
+          <p class="name">Mサイズ</p>
+          <p class="desc">3〜8歳<br>頭囲 54cm</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <h3>だから、こんなメリットが！</h3>
+      <div class="merit-grid">
+        <div class="merit-card">☀️ 長時間の外遊びも安心</div>
+        <div class="merit-card">🙂 子どもの肌をやさしく守る</div>
+        <div class="merit-card">💧 お手入れがしやすい</div>
+        <div class="merit-card">❤️ ママの負担も軽減</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最終CTA -->
+  <section class="closing">
+    <p>お気に入りの帽子で、<br>この夏をもっと楽しく♪</p>
+    <a class="cta-button" href="https://hb.afl.rakuten.co.jp/ichiba/57c322a7.3e881040.57c322a8.7d8c3ed7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flegashop%2Fpjovs202506201753289596903493%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIn0%253D&rafmid=0106" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      楽天市場で商品を見る
+    </a>
+  </section>
+
+  <p class="disclosure">広告・アフィリエイトを含みます</p>
+
+</div>
+</body>
+</html>
