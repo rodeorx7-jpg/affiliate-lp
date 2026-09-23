@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>子どものUVカットサファリハット｜首元まで、しっかりUV対策</title>
+<meta name="description" content="UVカット99%以上・日よけフラップ付き・撥水加工のキッズ用サファリハット。公園、水遊び、お散歩、旅行など夏の外遊びの紫外線対策に。">
+<style>
+  :root {
+    --color-bg: #ffffff;
+    --color-soft-blue: #eaf6fb;
+    --color-soft-yellow: #fffaf0;
+    --color-cta: #3aa0dd;
+    --color-cta-dark: #2680b8;
+    --color-text: #2c3e50;
+    --color-sub: #6b7d8f;
+    --color-card: #ffffff;
+    --radius: 18px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .page {
+    max-width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  section {
+    padding: 40px 22px;
+  }
+
+  h2.section-title {
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .mark {
+    background: linear-gradient(transparent 58%, #cdeaf9 58%);
+  }
+
+  /* 広告表示 */
+  .disclosure-top {
+    text-align: center;
+    font-size: 11.5px;
+    color: var(--color-sub);
+    background: var(--color-soft-yellow);
+    padding: 8px 12px;
+  }
+
+  .disclosure-bottom {
+    text-align: center;
+    font-size: 11.5px;
+    color: var(--color-sub);
+    padding: 18px 20px 34px;
+  }
+
+  /* 画像フレーム（画像未設置でも崩れない仕組み） */
+  .img-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--color-soft-blue);
+    border-radius: var(--radius);
+  }
+
+  .img-frame img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-fallback {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-sub);
+    font-size: 12.5px;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .ratio-hero { aspect-ratio: 4 / 5; border-radius: 0; }
+  .ratio-4-3 { aspect-ratio: 4 / 3; }
+
+  /* SECTION1 ヒーロー */
+  .hero-copy {
+    text-align: center;
+    padding: 28px 22px 8px;
+    background: var(--color-soft-blue);
+  }
+
+  .hero-copy h1 {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 0 0 12px;
+  }
+
+  .hero-copy p.sub {
+    font-size: 15px;
+    color: var(--color-cta-dark);
+    font-weight: bold;
+    margin: 0 0 22px;
+  }
+
+  /* CTAボタン */
+  .cta-button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    background: var(--color-cta);
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 12px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(58, 160, 221, 0.35);
+  }
+
+  .cta-button:active {
+    opacity: 0.85;
+  }
+
+  .cta-button.large {
+    font-size: 18px;
+    padding: 20px 12px;
+  }
+
+  .cta-note {
+    text-align: center;
+    font-size: 11.5px;
+    color: var(--color-sub);
+    margin: 12px 0 0;
+  }
+
+  section.hero-cta-section {
+    padding: 24px 22px 40px;
+    background: var(--color-soft-blue);
+  }
+
+  /* SECTION2 悩み */
+  .lead {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--color-sub);
+    margin: -6px 0 22px;
+  }
+
+  .worry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .worry-list li {
+    background: var(--color-soft-blue);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .worry-list li::before {
+    content: "☑︎ ";
+    color: var(--color-cta-dark);
+    font-weight: bold;
+  }
+
+  /* SECTION3 解決策 / SECTION4,5,7 画像+テキスト */
+  .split-section p {
+    font-size: 14px;
+    margin: 14px 0 0;
+  }
+
+  .split-section .img-frame {
+    margin-top: 18px;
+  }
+
+  .section-heading-first .img-frame {
+    margin: 0 0 18px;
+  }
+
+  /* SECTION6 特徴カード */
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0 24px;
+  }
+
+  .feature-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--color-card);
+    border: 1px solid var(--color-soft-blue);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+
+  .feature-card .emoji {
+    font-size: 26px;
+  }
+
+  .feature-card .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 2px;
+  }
+
+  .feature-card .desc {
+    font-size: 12px;
+    color: var(--color-sub);
+    margin: 0;
+  }
+
+  /* SECTION8 サイズ */
+  .size-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .size-card {
+    background: var(--color-soft-blue);
+    border-radius: var(--radius);
+    text-align: center;
+    padding: 18px 10px;
+  }
+
+  .size-card .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-cta-dark);
+  }
+
+  .size-card .desc {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .size-note {
+    font-size: 12px;
+    color: var(--color-sub);
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  /* SECTION9 カラー */
+  .color-row {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+  }
+
+  .color-item {
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--color-sub);
+  }
+
+  .color-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .color-dot.pink { background: #f7c6da; }
+  .color-dot.blue { background: #bfe0f5; }
+  .color-dot.ivory { background: #f1e9d8; }
+
+  .color-note {
+    font-size: 11.5px;
+    color: var(--color-sub);
+    text-align: center;
+    margin-top: 18px;
+  }
+
+  /* SECTION10 利用シーン */
+  .scene-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .scene-card {
+    background: var(--color-soft-blue);
+    border-radius: var(--radius);
+    text-align: center;
+    padding: 22px 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* SECTION11 最終CTA */
+  .final-section {
+    background: var(--color-soft-blue);
+    text-align: center;
+  }
+
+  .final-section h2 {
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 20px 0 24px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="disclosure-top">広告・アフィリエイトを含みます</p>
+
+  <!-- SECTION1: ファーストビュー -->
+  <div class="img-frame ratio-hero">
+    <img src="images/01-hero.jpg" alt="UVカットサファリハットをかぶった子どもと親"
+      onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+      onerror="this.nextElementSibling.style.display='flex';">
+    <span class="img-fallback">画像準備中</span>
+  </div>
+  <div class="hero-copy">
+    <h1>子どもの日焼け、<br>顔だけで大丈夫？</h1>
+    <p class="sub">首元まで、しっかりUV対策。</p>
+  </div>
+  <section class="hero-cta-section">
+    <!--
+      ★楽天アフィリエイトリンクについて★
+      このページ内のCTAボタンは、すべて同じ楽天アフィリエイトリンクを使用しています。
+    -->
+    <a class="cta-button" href="https://hb.afl.rakuten.co.jp/ichiba/57c3283c.38989499.57c3283d.dbb9c692/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdousinselect%2Fl5fs072%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIn0%253D&rafmid=0106" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      楽天市場で詳しく見る
+    </a>
+  </section>
+
+  <!-- SECTION2: ママの悩み -->
+  <section>
+    <h2 class="section-title">夏の外遊び、<br>こんなこと気になりませんか？</h2>
+    <p class="lead">ちょっとしたことだけど、毎日のお出かけで気になる…そんな声をよく聞きます。</p>
+    <ul class="worry-list">
+      <li>顔だけでなく首元の日差しも気になる</li>
+      <li>日焼け止めを塗り直すのが大変</li>
+      <li>汗や水遊びが気になる</li>
+      <li>公園や旅行では長時間外にいることもある</li>
+    </ul>
+  </section>
+
+  <!-- SECTION3: 解決策 -->
+  <section class="split-section">
+    <h2 class="section-title">そこで、<br><span class="mark">かぶるUV対策</span>という選択肢。</h2>
+    <div class="img-frame ratio-4-3">
+      <img src="images/02-neck.jpg" alt="首元までカバーする日よけフラップ付きサファリハット"
+        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+        onerror="this.nextElementSibling.style.display='flex';">
+      <span class="img-fallback">画像準備中</span>
+    </div>
+    <p>つばと日よけフラップで、顔まわりから首元までカバーしやすいキッズ用サファリハット。</p>
+    <p>日焼け止めなどの対策と組み合わせながら、夏の外遊びをサポートするアイテムです。</p>
+  </section>
+
+  <!-- SECTION4: 外遊び -->
+  <section class="split-section section-heading-first">
+    <div class="img-frame ratio-4-3">
+      <img src="images/03-park.jpg" alt="公園で外遊びをする子ども"
+        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+        onerror="this.nextElementSibling.style.display='flex';">
+      <span class="img-fallback">画像準備中</span>
+    </div>
+    <h2 class="section-title">公園遊びも、<br>首元までUV対策。</h2>
+    <p style="text-align:center;">滑り台や砂場遊びなど、外での時間が長くなる公園遊びにも取り入れやすいアイテムです。</p>
+  </section>
+
+  <!-- SECTION5: 水遊び -->
+  <section class="split-section section-heading-first">
+    <div class="img-frame ratio-4-3">
+      <img src="images/04-water.jpg" alt="水遊びを楽しむ子ども"
+        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+        onerror="this.nextElementSibling.style.display='flex';">
+      <span class="img-fallback">画像準備中</span>
+    </div>
+    <h2 class="section-title">水遊びの日も、<br>日差し対策を忘れずに。</h2>
+    <p style="text-align:center;">撥水加工なので、水しぶきがかかりやすい水遊びのシーンでも使いやすいのがうれしいポイントです。</p>
+  </section>
+
+  <!-- SECTION6: 商品の特徴 -->
+  <section>
+    <h2 class="section-title">商品の特徴</h2>
+    <div class="img-frame ratio-4-3">
+      <img src="images/05-features.jpg" alt="UVカットサファリハットの特徴一覧"
+        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+        onerror="this.nextElementSibling.style.display='flex';">
+      <span class="img-fallback">画像準備中</span>
+    </div>
+    <div class="feature-list">
+      <div class="feature-card">
+        <span class="emoji">☀️</span>
+        <div>
+          <p class="title">UVカット99%以上</p>
+          <p class="desc">紫外線からしっかりガード。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <span class="emoji">🧢</span>
+        <div>
+          <p class="title">日よけフラップ</p>
+          <p class="desc">首元までカバーしやすい設計。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <span class="emoji">💧</span>
+        <div>
+          <p class="title">撥水加工</p>
+          <p class="desc">水遊びのシーンでも使いやすい。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <span class="emoji">🪢</span>
+        <div>
+          <p class="title">あご紐付き</p>
+          <p class="desc">風の強い日も安心して使える。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <span class="emoji">📏</span>
+        <div>
+          <p class="title">サイズ調整可能</p>
+          <p class="desc">成長に合わせて長く使える。</p>
+        </div>
+      </div>
+    </div>
+    <a class="cta-button" href="https://hb.afl.rakuten.co.jp/ichiba/57c3283c.38989499.57c3283d.dbb9c692/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdousinselect%2Fl5fs072%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIn0%253D&rafmid=0106" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      楽天市場で詳しく見る
+    </a>
+  </section>
+
+  <!-- SECTION7: ママ目線 -->
+  <section class="split-section section-heading-first">
+    <div class="img-frame ratio-4-3">
+      <img src="images/06-mother.jpg" alt="子どもを見守る母親"
+        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+        onerror="this.nextElementSibling.style.display='flex';">
+      <span class="img-fallback">画像準備中</span>
+    </div>
+    <h2 class="section-title">日焼け止めだけじゃ、<br>首元がちょっと心配。</h2>
+    <p style="text-align:center;">日焼け止めはしっかり塗っているつもりでも、首元や耳の後ろは塗り忘れやすい場所。塗る対策に、かぶる対策をプラスすることで、より安心して外遊びを楽しめます。</p>
+  </section>
+
+  <!-- SECTION8: サイズ -->
+  <section>
+    <h2 class="section-title">サイズ</h2>
+    <div class="size-grid">
+      <div class="size-card">
+        <p class="name">S</p>
+        <p class="desc">頭囲50cm<br>目安 1〜3歳</p>
+      </div>
+      <div class="size-card">
+        <p class="name">M</p>
+        <p class="desc">頭囲54cm<br>目安 3〜8歳</p>
+      </div>
+    </div>
+    <p class="size-note">サイズは購入前に、楽天市場の商品ページで最新情報をご確認ください。</p>
+  </section>
+
+  <!-- SECTION9: カラー -->
+  <section>
+    <h2 class="section-title">カラー</h2>
+    <div class="color-row">
+      <div class="color-item"><div class="color-dot pink"></div>ピンク</div>
+      <div class="color-item"><div class="color-dot blue"></div>ブルー</div>
+      <div class="color-item"><div class="color-dot ivory"></div>アイボリー</div>
+    </div>
+    <p class="color-note">※実物と画面の表示では、色味が異なる場合があります。</p>
+  </section>
+
+  <!-- SECTION10: 利用シーン -->
+  <section>
+    <h2 class="section-title">こんなシーンに</h2>
+    <div class="scene-grid">
+      <div class="scene-card">公園</div>
+      <div class="scene-card">水遊び</div>
+      <div class="scene-card">お散歩</div>
+      <div class="scene-card">旅行・レジャー</div>
+    </div>
+  </section>
+
+  <!-- SECTION11: 最終CTA -->
+  <section class="final-section">
+    <div class="img-frame ratio-4-3">
+      <img src="images/07-cta.jpg" alt="夏のお出かけを楽しむ親子"
+        onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+        onerror="this.nextElementSibling.style.display='flex';">
+      <span class="img-fallback">画像準備中</span>
+    </div>
+    <h2>夏のお出かけに、<br>子どものUV対策を。</h2>
+    <a class="cta-button large" href="https://hb.afl.rakuten.co.jp/ichiba/57c3283c.38989499.57c3283d.dbb9c692/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdousinselect%2Fl5fs072%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIn0%253D&rafmid=0106" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      楽天市場で詳しく見る
+    </a>
+    <p class="cta-note">楽天市場の商品ページへ移動します</p>
+  </section>
+
+  <p class="disclosure-bottom">当ページにはアフィリエイト広告が含まれています。</p>
+
+</div>
+</body>
+</html>
